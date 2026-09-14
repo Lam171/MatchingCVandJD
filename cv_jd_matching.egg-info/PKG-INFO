@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: cv-jd-matching
+Version: 0.1.0
+Summary: Extract structured CV data and explain CV-to-JD matching
+Requires-Python: >=3.11
+Requires-Dist: fastapi<1.0,>=0.115
+Requires-Dist: uvicorn[standard]<1.0,>=0.30
+Requires-Dist: pydantic-settings<3.0,>=2.6
+Requires-Dist: python-dotenv<2.0,>=1.0
+Requires-Dist: sqlalchemy<3.0,>=2.0
+Requires-Dist: psycopg[binary]<4.0,>=3.2
+Requires-Dist: alembic<2.0,>=1.14
+Requires-Dist: python-multipart<1.0,>=0.0.12
+Requires-Dist: pymupdf<2.0,>=1.24
+Requires-Dist: python-docx<2.0,>=1.1
+Requires-Dist: pytesseract<1.0,>=0.3.13
+Requires-Dist: pillow<13.0,>=11.0
+Requires-Dist: rapidfuzz<4.0,>=3.10
+Requires-Dist: spacy<4.0,>=3.8
+Requires-Dist: structlog<26.0,>=24.4
+Provides-Extra: semantic
+Requires-Dist: sentence-transformers<4.0,>=3.3; extra == "semantic"
+Provides-Extra: worker
+Requires-Dist: celery<6.0,>=5.4; extra == "worker"
+Requires-Dist: redis<6.0,>=5.2; extra == "worker"
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.3; extra == "dev"
+Requires-Dist: pytest-asyncio<1.0,>=0.24; extra == "dev"
+Requires-Dist: httpx<1.0,>=0.28; extra == "dev"
+Requires-Dist: ruff<1.0,>=0.8; extra == "dev"
+Requires-Dist: mypy<2.0,>=1.13; extra == "dev"

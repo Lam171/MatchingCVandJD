@@ -1,0 +1,54 @@
+TRAN ANH QUANG
+AI Developer Intern
+Ó +84 352 413 335 ⋄½ Ha Noi City, Viet Nam ⋄R taquangk63@gmail.com ⋄ quangtran04
+SUMMARY
+I’m an Information Technology student at the University of Transport and Communications with a strong interest
+in Artificial Intelligence and Data. I have completed AI training through Viet Nguyen AI, participated in AI-related
+academic projects, and am currently working as an AI Intern at iVista Technology. I am seeking an AI Developer In-
+ternship where I can apply my knowledge of Machine Learning, Large Language Models (LLMs), Retrieval-Augmented
+Generation (RAG), and software development while gaining hands-on experience in real-world AI applications.
+EDUCATION
+University of Transport and Communications (UTC)
+09/2022 – 06/2027 (Expected)
+Major: Information Technology
+• GPA: 8.0/10.0
+SKILLS
+Technical Skills
+• Programming Languages: Python, C#, Java, JavaScript
+• AI: Machine Learning, Deep Learning (Basic), Large Language Models
+(LLMs), Retrieval-Augmented Generation (RAG), Prompt Engineer-
+ing
+• Databases: PostgreSQL, SQL Server, MySQL
+• Tools: Git, Docker, Postman, Visual Studio, VS Code
+• Other:
+Object-Oriented Programming,
+RESTful APIs,
+JSON,
+Database Design, Debugging
+Language
+• English: B1 (Intermediate)
+• Reading technical documentation
+• Basic communication
+EXPERIENCE
+AI Intern — iVista Technology
+07/2026 – Present
+• Participated in AI software development projects under the guidance of senior developers.
+• Worked with Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and AI chatbot systems.
+• Assisted in processing documents, preparing datasets, and integrating AI services into web applications.
+• Learned prompt engineering, document chunking, vector databases, and AI model integration.
+• Collaborated with team members using Git, Docker, PostgreSQL, and REST APIs in an Agile environment.
+PROJECTS
+• Bee Assistant - AI Chatbot
+05/2026 – 07/2026
+– Developed an AI-powered chatbot to answer beekeeping-related questions using Large Language Models
+(LLMs) and Retrieval-Augmented Generation (RAG).
+– Processed and indexed documents to build a knowledge base for semantic search.
+– Integrated REST APIs and optimized prompt engineering to improve response quality.
+– Technologies: Python, LLM, RAG, Open WebUI, PostgreSQL, Docker, REST API, Git.
+• Used Car Price Prediction
+10/2025 – 12/2025
+– Built a machine learning model to predict used car prices based on vehicle specifications.
+
+– Performed data preprocessing, feature engineering, model training, and evaluation.
+– Developed a simple interface for users to input vehicle information and receive price predictions.
+– Technologies: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Flask.

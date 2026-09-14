@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+app/__init__.py
+app/main.py
+app/application/text_extraction.py
+cv_jd_matching.egg-info/PKG-INFO
+cv_jd_matching.egg-info/SOURCES.txt
+cv_jd_matching.egg-info/dependency_links.txt
+cv_jd_matching.egg-info/requires.txt
+cv_jd_matching.egg-info/top_level.txt
+tests/test_health.py
+tests/test_text_extraction.py

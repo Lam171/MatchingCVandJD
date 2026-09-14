@@ -1,0 +1,48 @@
+Mô tả công việc
+Chúng tôi là một startup công nghệ thương mại điện tử có trụ sở tại Việt Nam, đang xây dựng một nền tảng giúp các nhà bán hàng khởi tạo và mở rộng các cửa hàng dropshipping xuyên biên giới. Hệ sinh thái của chúng tôi bao gồm quản lý gian hàng, tích hợp với nhà cung cấp, tự động hóa quy trình xử lý đơn hàng và vận hành logistics xuyên biên giới. Hiện tại, chúng tôi đang phát triển lớp AI cho toàn bộ nền tảng và tìm kiếm những kỹ sư có khả năng đưa các tính năng AI từ giai đoạn nghiên cứu, thử nghiệm đến triển khai và vận hành trong môi trường thực tế. Chúng tôi đang mở rộng đội ngũ AI để triển khai các dự án Computer Vision và Agentic AI, mang đến cơ hội thực tập thực chiến cho các bạn sinh viên đam mê lĩnh vực Trí tuệ Nhân tạo.
+Mô tả công việc:
+Computer Vision:
+Hỗ trợ xây dựng và huấn luyện các mô hình nhận diện hình ảnh, object detection, image segmentation, OCR
+Thu thập, gán nhãn và tiền xử lý dữ liệu hình ảnh/video phục vụ training
+Đánh giá hiệu năng mô hình và tối ưu hóa kết quả
+Agentic AI:
+Tham gia phát triển các hệ thống AI Agent sử dụng LLM (GPT, Claude, open-source models)
+Xây dựng pipeline RAG, tool-use, multi-agent workflow
+Tích hợp AI Agent vào sản phẩm và quy trình thực tế của công ty
+Chung:
+Nghiên cứu và thử nghiệm các công nghệ, framework mới trong lĩnh vực AI
+Viết tài liệu kỹ thuật và báo cáo kết quả thử nghiệm
+Phối hợp với đội ngũ engineering để triển khai giải pháp AI vào sản phẩm
+Yêu cầu
+Sinh viên năm cuối các ngành CNTT, Khoa học Máy tính, Trí tuệ Nhân tạo, Toán-Tin hoặc các ngành liên quan
+Xếp loại học lực Giỏi trở lên (GPA từ 3.2/4.0 hoặc tương đương)
+Có kiến thức nền tảng về Machine Learning và Deep Learning (CNN, Transformer, etc.)
+Đã có dự án cá nhân hoặc đã đi thực tập thời gian ngắn hạn là điểm cộng
+Thành thạo Python và quen thuộc với ít nhất một framework: PyTorch hoặc TensorFlow
+Hiểu biết cơ bản về xử lý ảnh (OpenCV, PIL/Pillow)
+Có khả năng đọc hiểu paper và tài liệu kỹ thuật tiếng Anh
+Điểm cộng:
+Đã có dự án AI/ML trong trường học hoặc cá nhân (đặc biệt về Computer Vision hoặc NLP)
+Từng tham gia các cuộc thi AI/ML (Kaggle, Hackathon, ICPC, etc.)
+Có kinh nghiệm với Lang Chain, Llama Index, CrewAI hoặc các agentic framework tương tự
+Biết sử dụng Git, Docker, CI/CD cơ bản
+Có hiểu biết về API development (FastAPI, Flask)
+Quyền lợi
+Lương upto 5M.
+Tham gia trực tiếp vào các dự án AI thực tế.
+Được mentor bởi đội ngũ kỹ sư có kinh nghiệm, làm việc trực tiếp với CTO
+Môi trường startup năng động, cơ hội học hỏi và phát triển nhanh
+Cơ hội trở thành nhân viên chính thức sau thực tập.
+Thời gian làm việc linh hoạt, phù hợp lịch học.(Ưu tiên fulltime)
+Tiếp cận các công nghệ AI tiên tiến nhất (LLM, Agent, Computer Vision)
+Trà, cafe miễn phí
+Thông tin khác
+Thời gian làm việc
+Thứ 2 - Thứ 6 (từ 08:30 đến 17:30)
+Thông tin chung
+Thu nhập: Tới 5 triệu
+Nơi làm việc
+Tòa Cmc, Số 11 Duy Tân, Hà Nội
+(Trước sáp nhập: Cầu Giấy, Hà Nội | Sau sáp nhập: Cầu Giấy, Hà Nội)
+1. Tòa CMC, số 11 Duy Tân,Hà Nội
+(Trước sáp nhập: Cầu Giấy, Hà Nội | Sau sáp nhập: Cầu Giấy, Hà Nội)

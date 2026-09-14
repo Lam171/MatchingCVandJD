@@ -1,0 +1,75 @@
+"""FastAPI entry point. Routers are added as use-cases are implemented."""
+
+from pathlib import Path
+
+from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
+
+from app.application.job_extraction import extract_job_profile
+from app.application.profile_extraction import extract_cv_profile
+from app.application.text_extraction import TextExtractionError, extract_text
+
+MAX_UPLOAD_BYTES = 10 * 1024 * 1024
+
+
+class InformationExtractionRequest(BaseModel):
+    cv_text: str
+    jd_text: str
+
+
+def create_app() -> FastAPI:
+    app = FastAPI(
+        title="CV–JD Matching API",
+        version="0.1.0",
+        description="Extract structured CV data and return explainable CV-to-JD matches.",
+    )
+
+    static_dir = Path(__file__).parent / "static"
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
+
+    @app.get("/", include_in_schema=False)
+    async def landing_page():
+        from fastapi.responses import FileResponse
+
+        return FileResponse(static_dir / "index.html")
+
+    @app.get("/health", tags=["system"])
+    async def health() -> dict[str, str]:
+        return {"status": "ok"}
+
+    @app.post("/api/extract-text", tags=["extraction"])
+    async def extract_uploaded_text(file: UploadFile = File(...)) -> dict[str, str]:  # noqa: B008
+        """Extract raw text from a document without persisting its content."""
+        payload = await file.read(MAX_UPLOAD_BYTES + 1)
+        if len(payload) > MAX_UPLOAD_BYTES:
+            raise HTTPException(
+                status_code=413,
+                detail={"code": "FILE_TOO_LARGE", "message": "Tệp không được lớn hơn 10MB."},
+            )
+        try:
+            text, method = extract_text(payload, file.filename or "")
+        except TextExtractionError as error:
+            raise HTTPException(
+                status_code=error.status_code,
+                detail={"code": error.code, "message": error.message},
+            ) from error
+        return {"filename": file.filename or "", "text": text, "method": method}
+
+    @app.post("/api/extract-information", tags=["extraction"])
+    async def extract_information(request: InformationExtractionRequest) -> dict[str, object]:
+        """Extract the structured CV profile; JD is retained for the next NLP phase."""
+        if not request.cv_text.strip() or not request.jd_text.strip():
+            raise HTTPException(
+                status_code=422,
+                detail={"code": "MISSING_INPUT", "message": "CV và JD đều phải có văn bản."},
+            )
+        return {
+            "cv_profile": extract_cv_profile(request.cv_text),
+            "jd_profile": extract_job_profile(request.jd_text),
+        }
+
+    return app
+
+
+app = create_app()
